@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate your taxes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>  
+</head>
+<body>
+
+<script>
+	function afis(){
+		var x=document.getElementById('n').value;
+		var y=document.getElementById('s').value;
+		var z=document.getElementById('t').value;
+		if(z >= 8){
+			var media=(100 - z) / 100 * (x * y);
+			alert("your salary this month is: " + media + " dkk");
+		}else{
+			alert("the taxes are incorrect");
+		}
+	}
+</script>
+
+<div data-role="page">
+	<div data-role="header">
+		<h2>Calculate your taxes</h2>
+	</div>
+
+	<div data-role="main" class="ui-content">
+		<form>
+
+		<div class="ui-field-contain">
+			<label for="name">Numbers of hours per month:</label>
+			<input type="text" name="hour" id="n" value="" placeholder="for example '100'"></input>
+		</div>
+
+		<div class="ui-field-contain">
+			<label for="name">Salary per hour:</label>
+			<input type="text" name="salary" id="s" value="" placeholder="for example '60'"></input>
+		</div>
+
+		<div class="ui-field-contain">
+			<label for="name">Your taxes:</label>
+			<input type="text" name="taxes" id="t" value="" placeholder="for example '8%'"></input>
+		</div>
+
+		<input type="button" value="Calculate" onclick="afis()"></input>
+    	<input type="reset" value="Reset" ></input>
+
+		</form>
+	</div>
+
+	<div data-role="footer">
+		<h2>Mihaita Nicolae</h2>
+		<center><a href="mailto:mihaita.nicolae@gmail.com" style="text-decoration:none">mihaita.nicolae@gmail.com</a></center>
+	</div>
+</div>
+
+</body>
+</html>
