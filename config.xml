@@ -6,7 +6,7 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>MyApp</name>
+    <name>myTaxes</name>
 
     <description>
         this is my first application
@@ -69,7 +69,7 @@
     -->
 
     <!-- Define app icon for each platform. -->
-    <icon src="favicon.ico" />
+    <icon src="tax.jpg" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
